@@ -9,25 +9,13 @@ namespace Codifun\Distance;
 class Hamming
 {
     /**
-     * Calculate Hamming Distance for given strings
+     * Calculate Hamming Distance between given strings
      * @param string $first
      * @param string $second
      * 
      * @return int
      */
     public function calculateHammingDistance(string $first, string $second): int
-    {
-        return $this->calculate($first, $second);
-    }
-
-    /**
-     * Calculate
-     * @param string $first
-     * @param string $second
-     * 
-     * @return int
-     */
-    private function calculate(string $first, string $second): int
     {
         $result = 0;
         foreach (range(0, strlen($first)) as $key => $value) {
@@ -43,7 +31,6 @@ class Hamming
                 $result++; 
             }
         }
-
         return $result;
     }
 }

@@ -9,7 +9,7 @@ namespace Codifun\Distance;
 class Levenshtein
 {
     /**
-     * Calculate Levenshtein Distance for given strings
+     * Calculate Levenshtein Distance between given strings
      * @param string $first
      * @param string $second
      * 
@@ -17,21 +17,10 @@ class Levenshtein
      */
     public function calculateLevenshteinDistance(string $first, string $second): int
     {
-        return $this->calculate($first, $second);
-    }
-
-    /**
-     * Calculate
-     * @param string $first
-     * @param string $second
-     * 
-     * @return int
-     */
-    private function calculate(string $first, string $second): int
-    {
         $leftString = (strlen($first) > strlen($second)) ? $first : $second;
         $rightString = (strlen($first) > strlen($second)) ? $second : $first;
         
+        /** Calculate the string length */
         $leftLength = strlen($leftString);
         $rightLength = strlen($rightString);
 
@@ -50,10 +39,12 @@ class Levenshtein
         if (($rightLength < $leftLength) && (strpos($leftString, $rightString) !== FALSE))
             return $leftLength - $rightLength;
 
+        /** Calculate Distance by String Comparison */
         return $this->calculateByStringComparison($rightString, $leftString);
     }
 
     /**
+     * Responsible to Calculate Levenshtein Distance by String Comparison
      * @param string $rightString
      * @param string $leftString
      * 
