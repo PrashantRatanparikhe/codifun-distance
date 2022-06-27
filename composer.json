@@ -1,0 +1,19 @@
+{
+    "name": "codifun/distance",
+    "description": "It will calculate the Hamming & levenshtein distance between two given string.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codifun\\Distance\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Upwork Developer",
+            "homepage": "https://github.com/pnodeskuser"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
