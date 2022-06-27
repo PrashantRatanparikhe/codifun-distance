@@ -1,7 +1,7 @@
 # Distance
 [![Build Status](https://github.com/PHPOffice/PhpSpreadsheet/workflows/main/badge.svg)](https://github.com/pnodeskuser/codifun-distance/actions)
-[![Total Downloads](https://img.shields.io/badge/downloads-0-blue)](https://packagist.org/packages/codifun/distance/stats)
-[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](https://packagist.org/packages/codifun/distance#v1.0.4)
+[![Total Downloads](https://img.shields.io/badge/downloads-2-blue)](https://packagist.org/packages/codifun/distance/stats)
+[![Version](https://img.shields.io/badge/version-v1.0.1-blue)](https://packagist.org/packages/codifun/distance#v1.0.1)
 [![License](https://img.shields.io/github/license/PHPOffice/PhpSpreadsheet)](https://packagist.org/packages/codifun/distance)
 
 Distance is a tool to calculate the Hamming &amp; levenshtein distance between two given string.
