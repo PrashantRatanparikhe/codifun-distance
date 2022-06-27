@@ -12,10 +12,10 @@ use Codifun\Distance\Levenshtein;
 trait Distance
 {
     /** @var Hamming */
-    private Hamming $hammingHandler;
+    private static Hamming $hammingHandler;
 
     /** @var Levenshtein */
-    private Levenshtein $levenshteinHandler;
+    private static Levenshtein $levenshteinHandler;
 
     public function __construct()
     {
@@ -29,8 +29,8 @@ trait Distance
      */
     public function bootDistanceTrait(): void
     {
-        $this->hammingHandler = new Hamming;
-        $this->levenshteinHandler = new Levenshtein;
+        self::$hammingHandler = new Hamming;
+        self::$levenshteinHandler = new Levenshtein;
     }
 
     /**
@@ -40,9 +40,9 @@ trait Distance
      * 
      * @return int
      */
-    public function getHammingDistance(string $first, string $second): int
+    public static function GetHammingDistance(string $first, string $second): int
     {
-        return $this->hammingHandler->calculateHammingDistance($first, $second);
+        return self::$hammingHandler->calculateHammingDistance($first, $second);
     }
 
     /**
@@ -52,8 +52,8 @@ trait Distance
      * 
      * @return int
      */
-    public function getLevenshteinDistance(string $first, string $second): int
+    public static function GetLevenshteinDistance(string $first, string $second): int
     {
-        return $this->levenshteinHandler->calculateLevenshteinDistance($first, $second);
+        return self::$levenshteinHandler->calculateLevenshteinDistance($first, $second);
     }
 }
