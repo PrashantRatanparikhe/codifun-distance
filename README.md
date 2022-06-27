@@ -57,8 +57,8 @@ class Index
         $stringTwo = "This is test";
         
         return [
-            'hamming_distance' => $this->getHammingDistance($string_one, $string_two),
-            'levenshtein_distance' => $this->getLevenshteinDistance($string_one, $string_two)
+            'hamming_distance' => self::GetHammingDistance($string_one, $string_two),
+            'levenshtein_distance' => self::GetLevenshteinDistance($string_one, $string_two)
         ];
     }
 }
