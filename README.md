@@ -1,15 +1,7 @@
 # Distance
-[![Build Status](https://github.com/PHPOffice/PhpSpreadsheet/workflows/main/badge.svg)](https://github.com/pnodeskuser/codifun-distance/actions)
-[![Total Downloads](https://img.shields.io/badge/downloads-2-blue)](https://packagist.org/packages/codifun/distance/stats)
-[![Version](https://img.shields.io/badge/version-v1.0.1-blue)](https://packagist.org/packages/codifun/distance#v1.0.1)
-[![License](https://img.shields.io/github/license/PHPOffice/PhpSpreadsheet)](https://packagist.org/packages/codifun/distance)
-
 Distance is a tool to calculate the Hamming &amp; levenshtein distance between two given string.
 
 ## PHP version support
-LTS: Support for PHP versions will only be maintained for a period of six months beyond the
-[end of life of that PHP version](https://www.php.net/eol.php).
-
 Currently the required PHP minimum version is PHP __^7.4__.
 
 See the `composer.json` for other requirements.
@@ -63,7 +55,3 @@ class Index
     }
 }
 ```
-
-## License
-
-Distance is licensed under [MIT](https://github.com/pnodeskuser/codifun-distance/blob/main/LICENSE).
